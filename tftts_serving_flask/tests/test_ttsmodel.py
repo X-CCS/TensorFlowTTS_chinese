@@ -15,6 +15,7 @@ import json
 import librosa
 import numpy as np
 import IPython.display as ipd
+sys.path.append("/home/project/TensorFlowTTS_chinese/tftts_serving_flask")
 from core.models import TTSModel
 
 
@@ -29,7 +30,7 @@ if __name__ == '__main__':
         print ("time>>>>>>>", time.time() - start_time)
     # print( "audios>>>>", audios  )
     ipd.Audio(audios, rate=24000)
-    librosa.output.write_wav("output_seq.wav", audios, 24000)
+    librosa.output.write_wav("output_seq_0107.wav", audios, 24000)
 
 '''
 time>>>>>>> 23.533220767974854 

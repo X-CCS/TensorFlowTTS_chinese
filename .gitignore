@@ -43,3 +43,7 @@ dump_ljspeech/
 dump_kss/
 dump_libritts/
 data/
+my_note/
+*.zip
+*.wav
+*.tflite

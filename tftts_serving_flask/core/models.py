@@ -7,18 +7,21 @@
 -------------------------------------------------
 
 '''
-
+import sys
 import yaml
 import numpy as np
 import tensorflow as tf
+sys.path.append("/home/project/TensorFlowTTS_chinese/tftts_serving_flask")
 from conf.config import config
 # import IPython.display as ipd
 from utils.logging import logging
+
+from core.parse_text_add_pause import TTSSegPause
+from core.parse_text_to_pyin import TTSPinYin
+sys.path.append("/home/project/TensorFlowTTS_chinese/")
 from tensorflow_tts.inference import AutoConfig
 from tensorflow_tts.inference import TFAutoModel
 from tensorflow_tts.inference import AutoProcessor
-from core.parse_text_add_pause import TTSSegPause
-from core.parse_text_to_pyin import TTSPinYin
 
 class TTSModel():
 

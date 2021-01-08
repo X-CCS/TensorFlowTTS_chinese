@@ -5,11 +5,11 @@ class config:
 
     CWD = os.getcwd()
     SUFFIX = '' if 'pinyin' in CWD else './'
-    MY_DICT = './data/mydict.dic'
-    WORDS_MAPPING_PATH = "./data/words_mapping.csv"
-    LOG_PATH = './logs/server_{}.log'
-    PINYIN_TXT = "./data/pinyin.txt"
-    LARGE_PINYIN_TXT = "./data/large_pinyin.txt"
+    MY_DICT = '/home/project/TensorFlowTTS_chinese/data/mydict.dic'
+    WORDS_MAPPING_PATH = "/home/project/TensorFlowTTS_chinese/data/words_mapping.csv"
+    LOG_PATH = '/home/project/TensorFlowTTS_chinese/data/logs/server_{}.log'
+    PINYIN_TXT = "/home/project/TensorFlowTTS_chinese/data/pinyin.txt"
+    LARGE_PINYIN_TXT = "/home/project/TensorFlowTTS_chinese/data/large_pinyin.txt"
 
     ch_regex = "[\u4e00-\u9fa5]"
     amap1 = ['', '万', '亿']
@@ -21,11 +21,11 @@ class config:
 		    "ī": "i1", "í": "i2", "ǐ": "i3", "ì": "i4", "ū": "u1", "ú": "u2", "ǔ": "u3", "ù": "u4", "ü": "v0", "ǖ": "v1", "ǘ": "v2", "ǚ": "v3",
 		    "ǜ": "v4", "ń": "n2", "ň": "n3", "": "m2" }
 
-    tacotron2_baker = "./data/model_config/tacotron2.baker.v1.yaml"
-    tacotron2_pretrained_path = "./data/model/tacotron2-100k.h5"
+    tacotron2_baker = "/home/project/TensorFlowTTS_chinese/data/tacotron2.baker.v1.yaml"
+    tacotron2_pretrained_path = "/home/project/TensorFlowTTS_chinese/data/model/model-100000.h5"
 
-    multiband_melgan_baker = "./data/model_config/multiband_melgan.baker.v1.yaml"
-    multiband_melgan_pretrained_path = "./data/model/mb.melgan-920k.h5"
+    multiband_melgan_baker = "/home/project/TensorFlowTTS_chinese/data/multiband_melgan.baker.v1.yaml"
+    multiband_melgan_pretrained_path = "/home/project/TensorFlowTTS_chinese/data/model/generator-920000.h5"
     
-    baker_mapper_pretrained_path = "./data/model_config/baker_mapper.json"
+    baker_mapper_pretrained_path = "/home/project/TensorFlowTTS_chinese/data/baker_mapper.json"
 
